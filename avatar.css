@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Avatar Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: url(mono.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Avatar Pixel";
+    font-style: normal;
+    font-weight: 400;
+    src: url(pixel.woff2) format("woff2");
+}
+
+body {
+    font-family: "Avatar Mono", monospace;
+    overflow: hidden;
+    color: white;
+    background: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: red;
+}
+
+a.block {
+    text-decoration: none;
+    background: red;
+    padding: 0.3em;
+    line-height: 2.5em;
+}
+
+a.block:hover {
+    background: white;
+    color: red;
+}
+
+.blink {
+    animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.pixel {
+    font-family: "Avatar Pixel", monospace;
+    line-height: 2em;
+}

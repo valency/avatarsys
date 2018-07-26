@@ -3,81 +3,53 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"/>
+    <link rel="stylesheet" href="avatar.css"/>
     <title>The Avatar System</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            color: #FFFFFF;
-            background-color: #FBBEDE;
-            font-family: "Segoe UI", sans-serif;
-        }
-
-        a {
-            color: #FFFFFF;
-        }
-
-        a:hover {
-            color: #EA74B2;
-        }
-
-        a.block {
-            color: #FBBEDE;
-            background-color: #FFFFFF;
-            padding: 2px 3px;
-            text-decoration: none;
-        }
-
-        a.block:hover {
-            color: #FFFFFF;
-            background-color: #EA74B2;
-        }
-
-        p > img {
-            margin-bottom: 1em;
-        }
-
-        div.wrapper {
-            width: 100%;
-            height: 100%;
             text-align: center;
+            position: relative;
         }
 
-        div.center {
-            position: relative;
+        .container {
+            width: 100%;
+            position: absolute;
             top: 50%;
             transform: translateY(-50%);
+        }
+
+        .container p {
+            margin: 50px 0;
+            padding: 0 50px;
+        }
+
+        .footer a {
+            font-size: small;
         }
 
     </style>
 </head>
 <body>
-<div class="wrapper">
-    <div class="center">
-        <p><img src='sketch.png'/></p>
-        <p>
-            The Avatar System is upgrading, and will be available on August 1, 2018.<br/>
-            The Avatar System 正在升级维护，并将于 2018 年 8 月 1 日恢复运营。
-        </p>
-        <p>
-            The following services are currently migrated and online:<br/>
-            以下服务已经迁移并可正常使用：
-        </p>
-        <p>
-            <a class="block" href="/api/img/" target="_blank">Deepfile</a>
-            <a class="block" href="lottery/" target="_blank">Lottery</a>
-            <a class="block" href="metronic/" target="_blank">Metronic</a>
-            <a class="block" href="prototype/" target="_blank">Prototype</a>
-            <a class="block" href="reactor/" target="_blank">Reactor</a>
-            <a class="block" href="tokenpay/" target="_blank">TokenPay</a>
-        </p>
-        <p>
-            The current system is archived <a href="http://119.23.129.16/" target="_blank">here</a>.<br/>
-            如欲访问旧版系统，请点击<a href="http://119.23.129.16/" target="_blank">这里</a>。
-        </p>
-        <p><a href="http://www.miitbeian.gov.cn" target="_blank">粤 ICP 备 17030785 号</a></p>
-    </div>
+<div class="container">
+    <h2 class="pixel">The Avatar System</h2>
+    <p>
+        <a class="block" href="/api/img/" target="_blank">Deepfile</a>
+        <a class="block" href="lottery/" target="_blank">Lottery</a>
+        <a class="block" href="metronic/" target="_blank">Metronic</a>
+        <a class="block" href="prototype/" target="_blank">Prototype</a>
+        <a class="block" href="reactor/" target="_blank">Reactor</a>
+        <a class="block" href="tokenpay/" target="_blank">TokenPay</a>
+        <a class="block" href="slock/" target="_blank">Slock</a>
+    </p>
+    <p class="footer">
+        <!--<a href="http://www.deepera.com" target="_blank"><i class="fa fa-home"></i></a>-->
+        <a href="http://119.23.129.16" target="_blank"><i class="fa fa-ribbon"></i></a>
+        /
+        <a href="mailto:yding@deepera.com" target="_blank"><i class="fa fa-envelope"></i></a>
+        /
+        <a href="http://www.miitbeian.gov.cn" target="_blank">粤 ICP 备 17030785 号</a>
+    </p>
 </div>
 </body>
 </html>
-
