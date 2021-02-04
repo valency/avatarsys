@@ -8,20 +8,7 @@
     <title>The Avatar System</title>
     <style>
         body {
-            text-align: center;
-            position: relative;
-        }
-
-        .container {
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .container p {
-            margin: 50px 0;
-            padding: 0 50px;
+            padding: 1em;
         }
 
         .footer a {
@@ -33,12 +20,19 @@
 <body>
 <div class="container">
     <h2 class="pixel">Avatar 个人项目测试中心</h2>
-    <p>
-        <a class="block" href="http://www.avatarsys.org:8004" target="_blank">地图匹配系统</a>
-        <a class="block" href="/deepella/" target="_blank">假期规划系统</a>
-        <a class="block" href="/api/img/" target="_blank">文档管理系统</a>
-        <a class="block" href="/reactor/" target="_blank">脚本管理系统</a>
-    </p>
+    <p><a class="block" href="http://www.avatarsys.org:8004" target="_blank">地图匹配系统</a></p>
+    <p>地图匹配（Map-Matching）是将运营车辆的有序的GPS位置关联到电子地图的路网上，将 GPS 坐标下采样序列转换为路网坐标序列的过程。因为 GPS 给定经纬度位置信息在匹配到电子地图的路网上会有误差，如果不进行地图匹配，那么车辆的运动轨迹可能落不到路网上；另外，由于 GPS 采样的时间间隔较大，GPS 点对的连线会小于车辆实际行驶的距离。
+    <p>比较著名的方法就是基于隐马尔科夫模型（Hidden Markov Model，HMM），其正确率在会议论文中结果在一定条件下都已经能够达到 90%。因此，本方案中直接选择 HMM 算法来解决地图匹配的问题，提供轨迹数据质量。</p>
+    <p>该算法的路网数据来源为 OSM，技术线路图和匹配的效果如图。其中，绿色的点代表某辆货柜车的在某一段时间内的 GPS 轨迹点，蓝色的线段为相邻两点 GPS 的连线。亮蓝色的是经路网匹配后的出行轨迹。经路网匹配后，可计算任意出行走廊上的任一节点到计算点的行驶距离，以及道路类型组成比例，甚至红绿灯的个数。</p>
+    <p><a class="block" href="/deepella/" target="_blank">假期规划系统</a></p>
+    <p>市面上有很多成熟的产品，并且现在很多 SaaS 软件，直接付钱在线使用，不用自己操心自己搭建服务器，省了很多本地 IT 的工作，当然 SaaS 模式也有弊端，数据安全性一直是被诟病的一点。前一段时间看到 FlowPortal 推出了软件免费，免费 20 个流程的消息，觉得以前需要花大钱才可以做的事情，现在很轻松的就可以去做了。</p>
+    <p>记得以前基于 FlowPortal 做过一个请假的流程，现在的公司竟然专门有一套系统叫做 E-Level，在线请假系统。如果你们公司也有这样的需求，不妨一试，免费的，根据自己的需求订制流程。</p>
+    <p><a class="block" href="/api/img/" target="_blank">文档管理系统</a></p>
+    <p>开源文档管理系统已成为每个组织以最高效率管理其文档的必要条件。今天互联网上有几种免费和付费的文件管理软件，可以帮助您轻松完成这项工作。然而，在继续购买之前，您首先需要了解的是这些系统的全部内容。</p>
+    <p>如前所述，文档管理系统对于为公司管理重要文档的过程提高效率至关重要。每个公司，无论其规模大小，都会产生许多重要文件。DMS软件可以毫无障碍地存储，跟踪，管理和保存您的重要文件。</p>
+    <p><a class="block" href="/reactor/" target="_blank">脚本管理系统</a></p>
+    <p>脚本库用于存放实现各个功能的脚本，是自动化运维的基础，所有运维命令都是通过脚本执行的。系统内置了一些常用默认脚本，同时支持自定义编写各类脚本。您可以创建、导入、查看、修改、导出、删除脚本。</p>
+    <hr/>
     <p class="footer">
         <a href="https://www.avatarsys.org:8003" target="_blank"><i class="fa fa-archive"></i></a>
         <a href="https://www.avatarsys.org:8001" target="_blank"><i class="fa fa-terminal"></i></a>
